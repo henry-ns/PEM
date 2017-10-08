@@ -1,0 +1,129 @@
+Flow report for Decodificador
+Mon Nov 07 11:31:22 2016
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Mon Nov 07 11:31:22 2016       ;
+; Quartus Prime Version           ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
+; Revision Name                   ; Decodificador                               ;
+; Top-level Entity Name           ; Decodificador                               ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CGXFC7C7F23C8                              ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; 3 / 56,480 ( < 1 % )                        ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 9 / 268 ( 3 % )                             ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0 / 7,024,640 ( 0 % )                       ;
+; Total DSP Blocks                ; 0 / 156 ( 0 % )                             ;
+; Total HSSI RX PCSs              ; 0 / 6 ( 0 % )                               ;
+; Total HSSI PMA RX Deserializers ; 0 / 6 ( 0 % )                               ;
+; Total HSSI TX PCSs              ; 0 / 6 ( 0 % )                               ;
+; Total HSSI PMA TX Serializers   ; 0 / 6 ( 0 % )                               ;
+; Total PLLs                      ; 0 / 13 ( 0 % )                              ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
++---------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 11/07/2016 11:29:13 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; Decodificador       ;
++-------------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                 ;
++-------------------------------------+---------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+---------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 128437426699195.147852895308396 ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; 16764057                        ; --            ; --          ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; --          ; Top        ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; --          ; Top        ;
++-------------------------------------+---------------------------------+---------------+-------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:16     ; 1.0                     ; 936 MB              ; 00:00:41                           ;
+; Fitter                    ; 00:01:06     ; 1.0                     ; 3164 MB             ; 00:02:46                           ;
+; Assembler                 ; 00:00:17     ; 1.0                     ; 915 MB              ; 00:00:14                           ;
+; TimeQuest Timing Analyzer ; 00:00:09     ; 1.0                     ; 1291 MB             ; 00:00:08                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 806 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 825 MB              ; 00:00:02                           ;
+; Total                     ; 00:01:52     ; --                      ; --                  ; 00:03:53                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; Henry-PC         ; Windows 8 ; 6.2        ; x86_64         ;
+; Fitter                    ; Henry-PC         ; Windows 8 ; 6.2        ; x86_64         ;
+; Assembler                 ; Henry-PC         ; Windows 8 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; Henry-PC         ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Henry-PC         ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Henry-PC         ; Windows 8 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off Decodificador -c Decodificador
+quartus_fit --read_settings_files=off --write_settings_files=off Decodificador -c Decodificador
+quartus_asm --read_settings_files=off --write_settings_files=off Decodificador -c Decodificador
+quartus_sta Decodificador -c Decodificador
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Decodificador -c Decodificador --vector_source=Z:/PEM/Henrique_Martins_Miranda_uC_PEM/tb_Decodificador.vwf --testbench_file=Z:/PEM/Henrique_Martins_Miranda_uC_PEM/simulation/qsim/tb_Decodificador.vwf.vt
+quartus_eda --write_settings_files=off --functional=off --flatten_buses=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog --output_directory=Z:/PEM/Henrique_Martins_Miranda_uC_PEM/simulation/qsim/ Decodificador -c Decodificador
+
+
+

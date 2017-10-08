@@ -1,0 +1,25 @@
+module contador_1(input logic clock, reset, output logic[3:0] c);
+	
+	logic direction;
+
+	always @(posedge clock or posedge reset)
+		case(reset)
+			1'b1: 
+				begin
+					c = 4'd0;
+					direction = 1'b0;
+				end
+				
+			1'b0:
+				begin
+					if(direction) 
+						c = c - 4'd1;
+					else 
+						c = c + 4'd1;
+					
+					if (c == 4'd15 || c == 4'd0)
+						direction = ~direction;
+				end
+		endcase
+				
+endmodule
